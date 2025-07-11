@@ -1,0 +1,30 @@
+/* Gmail-style “pill” search */
+.search-pill {
+  background-color: #e7e7e8;   /* subtle bluish tint */
+  border-radius: 2rem;         /* full pill */
+  transition: box-shadow .2s;
+}
+
+/* Remove the default input-group borders */
+.search-pill .input-group-text,
+.search-pill .form-control,
+.search-pill .btn {
+  background: transparent;
+  border: none;
+}
+
+.search-pill:focus-within {
+  box-shadow: 0 0 0 2px rgba(66,133,244,.3); /* blue glow when active */
+ 
+}
+
+/* fix the offcanvas width */
+.offcanvas-start {
+  width: 240px;              /* same width Gmail uses roughly */
+}
+
+/* when the sidebar is open, shift the <main> right */
+body.sidebar-open main.container-fluid {
+  margin-left: 240px;
+  transition: margin 0.3s ease;
+}

@@ -1,11 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">'
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css">  
+    <link href="styles.css" rel="stylesheet"> 
+    <title>Christian De La Rosa Gmail Boostrap Grid Project</title>
 </head>
 <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-light bg-light border-bottom"> 
+            <div class="container-fluid">
+        
+             <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#sidebarCollapse"
+                aria-controls="sidebarCollapse"
+                aria-label="Toggle sidebar" >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+ <!-- Brand tag / logo -->
+        <a class="navbar-brand fw-bold me-2" href="#">Gmail</a>
+        
+        <!-- Center search form -->
+         <form class="d-flex flex-grow-1 ms-3">
+         
+                <div class="input-group search-pill">
+                <span class="input-group-text bg-transparent border-0">
+                    <!-- Magnifying class icon -->
+                    <i class="bi bi-search"></i>
+                </span>
+                <!-- Search form -->
+                <input class="form-control border-0 bg-transparent"
+                    type="search"
+                    placeholder="Search mail" aria-label="Search">
+                <!-- Button sliders icon  -->
+                    <button class="btn bg-transparent border-0" type="button">
+                        <i class="bi bi-sliders"></i>
+                </button>
+            </div>
+         </form>
     
+                
+         <!-- Other icons  -->
+    <div class="d-none d-lg-flex align-items-center ms-3 gap-3">
+    <i class="bi bi-question-circle fs-5"></i>
+    <i class="bi bi-gear fs-5"></i>
+    <img src="img/avatar.jpg" class="rounded-circle" width="32" height="32" alt="">
+  </div>
+</nav> 
+ 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js">
+
+</script>~
+
 </body>
+
 </html>
